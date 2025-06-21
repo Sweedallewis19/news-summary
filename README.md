@@ -23,28 +23,6 @@ A full-stack web application that allows users to upload news articles (PDFs/ima
 
 ---
 
-## Project Structure
-
-news-summary-project/
-├── news-summary-backend/
-│ ├── app.py
-│ ├── utils/
-│ ├── requirements.txt
-│ └── .env ← MongoDB connection string here
-├── news-summary-frontend/
-│ ├── src/
-│ ├── public/
-│ ├── package.json
-│ └── tailwind.config.js
-├── .gitignore
-└── README.md
-
-yaml
-Copy
-Edit
-
----
-
 ## Local Setup Instructions
 
 ### 1. Clone the Repo
@@ -52,6 +30,8 @@ Edit
 bash
 git clone https://github.com/Sweedallewis19/news-summary.git
 cd news-summary
+
+
 2. Backend Setup
 bash
 Copy
@@ -69,15 +49,11 @@ MONGO_URI=mongodb://localhost:27017/news-summary
 Also install Poppler for Windows and add it to PATH for pdf2image.
 
 Run the backend:
-
 bash
-Copy
-Edit
 python app.py
+
+
 3. Frontend Setup
-bash
-Copy
-Edit
 cd ../news-summary-frontend
 npm install
 npm start
